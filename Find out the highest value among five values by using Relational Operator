@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a=56;
+        int b=63;
+        int c=48;
+        
+
+        //a>b>c // a>b&&a>c
+        //b>a>c // b>a&&b>c
+        //c>a>b // c>a&&c>b
+
+        //AND - &&
+        /*0 0-0
+        0 1 - 0
+        1 0 - 0
+        1 1 - 1*/
+        //OR - //
+
+        if(a>b && a>c){
+            System.out.println("a is greater than b and c ");
+        }
+        else if(b>a && b>c){
+            System.out.println("b is greater than a and c ");
+        }
+        else if(c>a && b>c){
+            System.out.println("c is greater than a and b ");
+        }
+
+
+
+    }
+}
