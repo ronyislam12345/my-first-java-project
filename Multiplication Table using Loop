@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        int num = 8;
+        int limit = 10;
+
+        System.out.println("Multiplication Table using Loop");
+
+        for (int i = 1; i <= limit; i++) {
+            int result = num*i;
+            System.out.println(num + "x" + i + " = " + result);
+        }
+    }
+}
