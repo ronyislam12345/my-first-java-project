@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double[] numbers = new double[2];
+        char operator;
+
+        while (true) {
+            System.out.print("Enter the first number: ");
+            numbers[0] = scanner.nextDouble();
+
+            System.out.print("Enter the second number: ");
+            numbers[1] = scanner.nextDouble();
+
+            System.out.print("Enter the operator (+, -, *, /): ");
+            operator = scanner.next().charAt(0);
+
+            double result = 0;
+
+            switch (operator) {
+                case '+':
+                    result = numbers[0] + numbers[1];
+                    break;
+                case '-':
+                    result = numbers[0] - numbers[1];
+                    break;
+                case '*':
+                    result = numbers[0] * numbers[1];
+                    break;
+                case '/':
+                    if (numbers[1] == 0) {
+                        System.out.println("Error: Division by zero is not allowed.");
+                    } else {
+                        result = numbers[0] / numbers[1];
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid operator. Please try again.");
+                    continue;
+            }
+
+            System.out.println("Result: " + result);
+
+            System.out.print("Do you want to perform another calculation? (y/n): ");
+            char choice = scanner.next().charAt(0);
+            if (choice != 'y' && choice != 'Y') {
+                break;
+            }
+        }
+        
+    }
+}
