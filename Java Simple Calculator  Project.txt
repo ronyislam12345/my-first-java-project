@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your 1st Digit: ");
+        int x = sc.nextInt();
+        System.out.println("Enter Your 2nd Digit: ");
+        int y = sc.nextInt();
+        System.out.println("Enter Your 3rd Digit: ");
+        int z = sc.nextInt();
+        System.out.println("Enter Your 4th Digit: ");
+        int w = sc.nextInt();
+
+        int sum = x+y+z+w;
+        int sub = x-y-z-w;
+        int mul = x*y*z*w;
+        double div = (double) x/y/z/w;
+        System.out.println("Total Sum: "+sum);
+        System.out.println("Sub Sum: "+sub);
+        System.out.println("Mul Sum: "+mul);
+        System.out.println("Div Sum: "+div);
+    }
+}
+
+
+
+"C:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.4\lib\idea_rt.jar=55581:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.4\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\ronyi\Downloads\RONY\IAJAVA\out\production\IAJAVA Main
+Enter Your 1st Digit: 
+50
+Enter Your 2nd Digit: 
+40
+Enter Your 3rd Digit: 
+30
+Enter Your 4th Digit: 
+20
+Total Sum: 140
+Sub Sum: -40
+Mul Sum: 1200000
+Div Sum: 0.0020833333333333333
+
+Process finished with exit code 0
