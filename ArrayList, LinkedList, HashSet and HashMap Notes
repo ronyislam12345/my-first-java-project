@@ -1,0 +1,53 @@
+import java.util.ArrayList; 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+//        ArrayList Example
+        ArrayList<String> Fruit = new ArrayList<String>();
+        Fruit.add("Apple");
+        Fruit.add("Banana");
+        Fruit.add("Orange");
+        Fruit.add("Pineapple");
+        Fruit.add("Watermelon");
+        Fruit.add("Grape");
+        Fruit.add("Mango");
+
+        System.out.println("Fruit: " + Fruit);
+
+//        LinkedList Example
+        LinkedList<String> Animals = new LinkedList();
+        Animals.add("Dog");
+        Animals.add("Cat");
+        Animals.add("Cow");
+        Animals.add("Pig");
+        Animals.add("Sheep");
+        Animals.add("Rabbit");
+
+        System.out.println("Animals: " + Animals);
+
+//        HashSet Example
+
+        HashSet<Integer> Numbers = new HashSet<>();
+        Numbers.add(100);
+        Numbers.add(200);
+        Numbers.add(300);
+        Numbers.add(400);
+        Numbers.add(500);
+
+        System.out.println("Numbers: " + Numbers);
+
+//        HashMap Example
+
+        HashMap<String,Integer> Ages = new HashMap<>();
+        Ages.put("Rakib Hossain", 25);
+        Ages.put("Mridul", 22);
+        Ages.put("Riyad", 22);
+        Ages.put("Ismail", 20);
+
+        System.out.println("Ages: " + Ages);
+
+    }
+}
